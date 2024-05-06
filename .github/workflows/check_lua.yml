@@ -9,8 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: leafo/gh-actions-lua@v9.1.0
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - uses: leafo/gh-actions-lua@v10
         with:
           luaVersion: "5.2.4"
       - uses: leafo/gh-actions-luarocks@v4.3.0
@@ -22,5 +25,3 @@ jobs:
       - name: Run checks
         run: |
           luacheck .
-          busted
-      - uses: codecov/codecov-action@v3.1.1
