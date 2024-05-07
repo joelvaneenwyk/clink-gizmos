@@ -1,5 +1,7 @@
 # Clink Gizmos
 
+> ⚠️ This is a fork of [clink-gizmos](https://github.com/chrisant996/clink-gizmos) created by [chrisant996 (Chris Antos)](https://github.com/chrisant996). This fork contains only minor changes/tweaks and adds GitHub build action to ensure changes are at least somewhat resilient.
+
 This is a collection of Lua scripts for use with [Clink](https://github.com/chrisant996/clink).
 
 > Note: This includes [clink-fzf](https://github.com/chrisant996/clink-fzf), so use either clink-gizmos or clink-fzf, but not both (using both results in duplication and warnings).  Clink-gizmos contains a collection of scripts, and clink-fzf contains a single script.
