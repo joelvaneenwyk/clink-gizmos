@@ -75,7 +75,11 @@
 --------------------------------------------------------------------------------
 -- Compatibility check.
 if not io.popenrw then
-    print('fzf.lua requires a newer version of Clink; please upgrade.')
+    if clink then
+        print('`fzf.lua` requires a newer version of Clink; please upgrade.')
+    else
+        print('`fzf.lua` requires a version of Lua that supports `io.popenrw` which is not available. Please install and use `Clink` instead.')
+    end
     return
 end
 
@@ -134,9 +138,9 @@ local function need_cd_drive(dir)
 end
 
 local function maybe_strip_icon(str)
-    local width = os.getenv("FZF_ICON_WIDTH")
-    if width then
-        width = tonumber(width)
+    local fzf_icon_width = os.getenv("FZF_ICON_WIDTH")
+    if fzf_icon_width then
+        local width = tonumber(fzf_icon_width)
         if width and width > 0 then
             if unicode.iter then
                 local iter = unicode.iter(str)
@@ -716,7 +720,7 @@ do
         if elm.opteq ~= nil then
             opteq = elm.opteq
         end
-
+        ---@type 'matcher'|'nested'|string|number|boolean|table|function|thread|userdata
         local t = type(arg)
         local arglinked = is_link(arg)
         if arglinked or is_parser(arg) then
