@@ -11,30 +11,12 @@
     },
     "Lua.addonManager.enable": true,
     "Lua.codeLens.enable": true,
-    "Lua.completion.enable": true,
-    "Lua.workspace.useGitIgnore": true,
-    "vscode-lua-format.configPath": ".luacheckrc",
     "Lua.completion.callSnippet": "Both",
     "Lua.completion.displayContext": 5,
-    "Lua.diagnostics.libraryFiles": "Enable",
-    "Lua.diagnostics.ignoredFiles": "Disable",
-    "Lua.diagnostics.workspaceEvent": "OnChange",
+    "Lua.completion.enable": true,
     "Lua.diagnostics.disable": [
         "undefined-field"
     ],
-    "Lua.hint.enable": true,
-    "Lua.hint.setType": true,
-    "Lua.misc.executablePath": "",
-    "Lua.misc.parameters": [
-        "--config-path=.luacheckrc"
-    ],
-    "Lua.workspace.library": [
-        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/busted/module/library",
-        "${3rd}/luassert/library",
-        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/lldebugger/module/library",
-        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/luafilesystem/module/library"
-    ],
-    "Lua.workspace.checkThirdParty": false,
     "Lua.diagnostics.globals": [
         "path",
         "settings",
@@ -88,5 +70,23 @@
         "cwdhistory_popup",
         "cwdhistory_selectcomplete",
         "cwdhistory_complete"
-    ]
+    ],
+    "Lua.diagnostics.ignoredFiles": "Disable",
+    "Lua.diagnostics.libraryFiles": "Enable",
+    "Lua.diagnostics.workspaceEvent": "OnChange",
+    "Lua.hint.enable": true,
+    "Lua.hint.setType": true,
+    "Lua.misc.executablePath": "",
+    "Lua.misc.parameters": [
+        "--config-path=.luacheckrc"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "Lua.workspace.library": [
+        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/busted/module/library",
+        "${3rd}/luassert/library",
+        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/lldebugger/module/library",
+        "C:/Users/JoelVanEenwyk/AppData/Roaming/Code/User/globalStorage/sumneko.lua/addonManager/addons/luafilesystem/module/library"
+    ],
+    "Lua.workspace.useGitIgnore": true,
+    "vscode-lua-format.configPath": ".luacheckrc"
 }
