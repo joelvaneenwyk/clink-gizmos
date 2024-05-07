@@ -65,10 +65,12 @@ local function load_seen_tips()
     if f then
         f:close()
         f = open_seen_tips_file("r", "w")
-        for line in f:lines() do
-            seen[line] = true
+        if f ~= nil then
+            for line in f:lines() do
+                seen[line] = true
+            end
+            f:close()
         end
-        f:close()
     end
     return seen
 end
