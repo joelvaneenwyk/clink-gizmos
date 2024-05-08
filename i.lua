@@ -10,6 +10,8 @@
 --
 -- Completion generators for {command} show matches as though {dir} were the
 -- current directory.
+
+-- luacheck: globals command_name
 command_name = nil
 
 if (clink.version_encoded or 0) < 10030013 then

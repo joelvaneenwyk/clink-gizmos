@@ -78,7 +78,7 @@ if not io.popenrw then
     if clink then
         print('`fzf.lua` requires a newer version of Clink; please upgrade.')
     else
-        print('`fzf.lua` requires a version of Lua that supports `io.popenrw` which is not available. Please install and use `Clink` instead.')
+        print('`fzf.lua` requires `io.popenrw` which is only availble in `Clink` instances.')
     end
     return
 end
