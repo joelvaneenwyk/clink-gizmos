@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: cspell-clink-gizmos
+    path: ./.vscode/cspell-clink-gizmos.txt
+    addWords: true
+dictionaries:
+  - cspell-clink-gizmos
+words: []
+ignoreWords: []
+import: []
